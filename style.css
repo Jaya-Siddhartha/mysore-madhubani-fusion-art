@@ -1,0 +1,151 @@
+/* Fusion of Indian Art: Mysore Meets Madhubani
+   Simple traditional palette: ivory, terracotta, green, red, gold */
+
+:root {
+  --ivory: #fbf6ea;
+  --cream: #f3ead6;
+  --white: #fffdf8;
+  --terracotta: #b4532f;
+  --green: #2f6b4f;
+  --red: #a82a2a;
+  --gold: #c9a24a;
+  --ink: #2d2620;
+  --muted: #6d655a;
+  --line: #e2d5bb;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font: 17px/1.65 "Lato", Arial, sans-serif;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--terracotta); }
+a:hover { color: var(--green); }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; line-height: 1.2; margin: 0; }
+.small { font-size: 14px; color: var(--muted); }
+
+/* ---- Navigation ---- */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--terracotta);
+  border-bottom: 4px solid var(--gold);
+}
+.nav {
+  max-width: 1100px; margin: 0 auto; padding: 10px 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.logo { color: #fff; text-decoration: none; font: 700 20px "Playfair Display", Georgia, serif; }
+.logo span { color: #ffe39a; }
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.nav ul a { color: #fff; text-decoration: none; font-size: 15px; padding: 6px 10px; border-radius: 6px; display: block; }
+.nav ul a:hover { background: rgba(255, 255, 255, .18); color: #fff; }
+
+/* ---- Sections ---- */
+main section { max-width: 1100px; margin: 0 auto; padding: 50px 20px; }
+.section-title {
+  font-size: 34px; color: var(--terracotta); margin-bottom: 24px;
+  padding-bottom: 10px; border-bottom: 3px double var(--gold);
+}
+
+/* ---- 1. Intro ---- */
+.intro { text-align: center; padding-top: 60px; }
+.tag { color: var(--green); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 14px; margin: 0 0 12px; }
+.intro h1 { font-size: clamp(34px, 6vw, 58px); color: var(--ink); }
+.intro h1 em { color: var(--terracotta); }
+.lead { max-width: 760px; margin: 20px auto 30px; font-size: 18px; }
+.info-row { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; text-align: left; }
+.info { background: var(--white); border: 1px solid var(--line); border-left: 6px solid var(--green); border-radius: 10px; padding: 16px 20px; }
+.info h2 { font-size: 18px; color: var(--green); }
+.info p { margin: 4px 0 0; }
+.team { margin-top: 26px; }
+.team h2 { font-size: 18px; color: var(--green); margin-bottom: 10px; }
+.team ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.team li { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--gold); border-radius: 8px; padding: 8px 14px; font-weight: 700; display: flex; flex-direction: column; }
+.team li span { font-weight: 400; font-size: 13px; color: var(--muted); }
+
+/* ---- 2. Style cards ---- */
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+.card.mysore { border-top: 8px solid var(--gold); }
+.card.madhubani { border-top: 8px solid var(--red); }
+.card figure { margin: 0 0 14px; }
+.card img { width: 100%; height: 380px; object-fit: cover; border-radius: 8px; }
+.card figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; font-style: italic; }
+.card h3 { font-size: 26px; color: var(--terracotta); }
+.card .origin { margin: 4px 0 8px; color: var(--green); }
+.card ul { margin: 0; padding-left: 20px; }
+
+/* ---- 3. Artwork (centrepiece) ---- */
+.artwork { background: var(--cream); max-width: none !important; }
+.artwork > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+.artwork-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; }
+.artwork-frame {
+  margin: 0; background: var(--white); padding: 16px;
+  border: 10px solid var(--gold); outline: 4px solid var(--red); outline-offset: -20px;
+  box-shadow: 0 10px 30px rgba(80, 50, 10, .2);
+}
+.artwork-frame img { width: 100%; }
+.artwork-frame figcaption { text-align: center; font-size: 15px; color: var(--muted); margin-top: 10px; }
+.artwork-text h3 { font-size: 28px; color: var(--green); margin-bottom: 8px; }
+.points { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 14px; }
+.points li { display: flex; gap: 12px; align-items: flex-start; background: var(--white); border-radius: 10px; padding: 12px 14px; border: 1px solid var(--line); }
+.dot { flex: none; width: 16px; height: 16px; border-radius: 50%; margin-top: 6px; }
+.dot.gold { background: var(--gold); }
+.dot.green { background: var(--green); }
+.dot.red { background: var(--red); }
+
+/* ---- 4. Table ---- */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 10px; overflow: hidden; }
+th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); }
+th { background: var(--green); color: #fff; font-family: "Playfair Display", Georgia, serif; font-size: 17px; }
+th:nth-child(2) { background: #8a6a1f; }
+th:nth-child(3) { background: var(--red); }
+td:first-child { font-weight: 700; color: var(--terracotta); }
+tbody tr:nth-child(even) { background: #fbf4e4; }
+.note { margin-top: 18px; background: var(--white); border-left: 6px solid var(--gold); padding: 14px 18px; border-radius: 0 10px 10px 0; }
+
+/* ---- 5. Method ---- */
+.method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.box { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+.box h3 { font-size: 24px; color: var(--green); margin-bottom: 10px; }
+.box ul { margin: 0; padding-left: 20px; }
+.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+.steps li { counter-increment: step; position: relative; padding: 6px 0 6px 44px; }
+.steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 4px;
+  width: 30px; height: 30px; border-radius: 50%; background: var(--terracotta); color: #fff;
+  display: grid; place-items: center; font-weight: 700; font-size: 15px;
+}
+
+/* ---- 6. Conclusion ---- */
+.conclusion p { font-size: 18px; background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; margin: 0; }
+
+/* ---- 7. References ---- */
+.refs { margin: 0; padding-left: 20px; }
+.refs li { margin-bottom: 8px; }
+.refs a { word-break: break-word; }
+
+/* ---- Footer ---- */
+.footer { background: var(--green); color: #fff; text-align: center; padding: 22px 20px; border-top: 4px solid var(--gold); }
+.footer p { margin: 4px 0; }
+.footer .small { color: #e6efe9; }
+
+/* ---- Mobile ---- */
+@media (max-width: 800px) {
+  .cards, .artwork-layout, .method-grid, .info-row { grid-template-columns: 1fr; }
+  .card img { height: 300px; }
+  .section-title { font-size: 28px; }
+  .nav { justify-content: center; }
+  .nav ul { justify-content: center; }
+  .nav ul a { font-size: 14px; padding: 4px 8px; }
+  .topbar { position: static; }
+  html { scroll-padding-top: 0; }
+  th, td { padding: 9px 8px; font-size: 14.5px; }
+  th { font-size: 15px; }
+}
