@@ -4,6 +4,9 @@
 
 **Objective:** To create and present an original artwork that combines elements of two Indian regional painting traditions: **Mysore painting** (Karnataka) and **Madhubani painting** (Bihar).
 
+**Live site:** https://mysore-madhubani-fusion-art.vercel.app  
+**GitHub:** https://github.com/Jaya-Siddhartha/mysore-madhubani-fusion-art
+
 ### Team
 
 | Name | Register number |
