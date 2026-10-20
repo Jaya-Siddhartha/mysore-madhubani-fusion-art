@@ -17,7 +17,7 @@
 | Yogesh Reddy Pelluru | RA2411003010742 |
 | Gopalchetty Goutam | RA2411003010767 |
 
-> **Important:** the main deliverable of this assignment is the **actual fusion artwork** that the team draws or paints. This website only presents that artwork and explains the design. Until the artwork is finished, the website shows a clearly labelled **placeholder** (a plan of the composition).
+> **About the artwork:** the fusion artwork shown on the website (`assets/fusion-artwork.svg`) is an original **digital illustration** (SVG). It is not hand-painted, and the website says so. If the team also paints the design by hand, its photo can be shown instead (see below).
 
 ---
 
@@ -31,7 +31,7 @@ Project 3/
 └── assets/
     ├── mysore-reference.jpg            reference image (from Mysore_images_2_pages.pdf)
     ├── madhubani-reference.jpg         reference image (from madhubani paintings.pdf)
-    └── fusion-artwork-placeholder.svg  placeholder: composition plan
+    └── fusion-artwork.svg              our fusion artwork (digital illustration)
 ```
 
 No JavaScript is needed. The site uses only HTML and CSS (plus Google Fonts).
@@ -48,29 +48,30 @@ No JavaScript is needed. The site uses only HTML and CSS (plus Google Fonts).
 
 ---
 
-## How to add your final artwork
+## The fusion artwork
 
-1. Take a clear, well-lit photo or scan of the finished artwork, straight-on and cropped to the paper edges.
+**File:** `assets/fusion-artwork.svg` (800 × 1000 vector image; it stays sharp at any size)
+
+| Part of the artwork | Inspired by |
+|---|---|
+| Saraswati: calm face, tall crown (kirita), necklaces, earrings, bangles, waist belt | Mysore painting |
+| Veena, prayer beads and palm-leaf book in her four hands; lotus seat; swan (her vehicle) | Mysore painting (traditional Saraswati iconography) |
+| Ornate gold arch with pearls and gems; deep red background | Mysore painting |
+| Peacocks, sun and moon, two patterned fish, lotus flowers, leafy vines | Madhubani painting |
+| Dotted background, triangle and leaf borders, bold double outlines, bright flat colours | Madhubani painting |
+| Flower garland in Madhubani colours on the Mysore figure; lotuses and water inside and outside the arch | Links that join the two styles |
+
+### Showing a hand-painted version instead (optional)
+
+1. Photograph or scan the painting straight-on, cropped to the paper edges.
 2. Save it as **`assets/fusion-artwork.jpg`**.
-3. Open `index.html` and find the comment **`TO ADD OUR FINAL ARTWORK`** (Section 3). Change:
-   ```html
-   <img src="assets/fusion-artwork-placeholder.svg"
-   ```
-   to:
-   ```html
-   <img src="assets/fusion-artwork.jpg"
-   ```
-4. Update the **`alt`** text to describe the real artwork. Replace the caption *"Placeholder: planned composition…"* with a real one, for example *"Saraswati: Mysore Meets Madhubani. Watercolour and gold paint on paper, 2026."*
-5. In **Section 5 (Materials)**, keep only the materials you actually used. If the artwork is digital, write the software name instead.
-6. In **Section 7 (References)**, change the "Fusion artwork" line if needed.
-7. Save, refresh the browser, and push to GitHub. Vercel updates the live site automatically.
+3. In `index.html` (Section 3), change `src="assets/fusion-artwork.svg"` to `src="assets/fusion-artwork.jpg"`, and remove `width="800" height="1000"` if the photo has a different shape.
+4. Change the caption line *"Digital illustration created for this project."* to describe the painting (e.g. *"Watercolour and gold paint on paper."*), and update the alt text and Section 7B.
 
-### What still needs to be done for the assignment
+### Remaining checks for the team
 
-- [ ] **Create the actual fusion artwork**: a Mysore-style Saraswati (veena, crown, jewellery, gold arch) surrounded by Madhubani-style fish, lotus flowers, birds, geometric patterns and a double-line border.
-- [ ] Add its photo to the website (steps above).
-- [ ] Confirm the **materials** you used (Section 5).
-- [ ] **Reference images:** the two PDFs don't record where their images came from. If you know the original source of the two images used (website, book, artist), add it to the References section. One Madhubani image in the PDF is signed "Rajni Kumari". It isn't one of the two images used on the site, but note it if you use it later.
+- [ ] **Reference images:** the two PDFs don't record where their images came from. If you know the original source of the two images used (website, book, artist), add it to Section 7A.
+- [ ] If you paint the design by hand, update the caption, the Materials note and Section 7B (steps above).
 
 ---
 
@@ -112,6 +113,12 @@ Then show: Section 2 (the two cards) → Section 3 (the artwork) → Section 4 (
 
 ## References
 
+**A. Sources used to study the traditional styles**
+
 - “Mysore painting”, Wikipedia: https://en.wikipedia.org/wiki/Mysore_painting (history, Vijayanagara origins, Wodeyar patronage, gesso and gold technique, subjects)
 - “Madhubani art”, Wikipedia: https://en.wikipedia.org/wiki/Madhubani_art (Mithila region, women painters, styles and motifs)
 - Reference images: from the team's own reference documents `Mysore_images_2_pages.pdf` and `madhubani paintings.pdf`. The original artists and sources were not recorded in those documents.
+
+**B. Original fusion artwork**
+
+- "Saraswati: Mysore Meets Madhubani" (`assets/fusion-artwork.svg`): an original digital illustration (SVG) created for this project. It is not copied from either reference document.
